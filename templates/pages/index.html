@@ -53,7 +53,7 @@
                 <select name="price" class="form-control" id="type">
                   <option selected="true" disabled="disabled">Max Price (Any)</option>
                   {% for key,value in prices.items %}
-                  <option value="{{ key }}">${{ value }}</option>
+                  <option value="{{ key }}">&#x20b9;{{ value }}</option>
                   {% endfor %}
                 </select>
               </div>
@@ -80,7 +80,7 @@
           <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="">
           <div class="card-img-overlay">
             <h2>
-              <span class="badge badge-secondary text-white">${{ listing.price | intcomma }}</span>
+              <span class="badge badge-secondary text-white">&#x20b9;{{ listing.price | intcomma }}</span>
             </h2>
           </div>
           <div class="card-body">
