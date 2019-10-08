@@ -1,8 +1,10 @@
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
-from django.shortcuts import render, get_object_or_404
-from .models import Listing
+from django.shortcuts import get_object_or_404, render
+
 from realtors.models import Realtor
+
 from .choices import bedrooms, cities, prices
+from .models import Listing
 
 
 def index(request):
